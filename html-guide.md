@@ -85,6 +85,10 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 
 자주 사용하는 특수무자는 다음과 같습니다.
 
-* [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp)(http://)
+---|---
+Ctrl-+ E | Expand Abbreviation - 축약어 확장
 
 
+
+
+* [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp): http://www.w3schools.com/charsets/ref_html_entities_4.asp
