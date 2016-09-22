@@ -4,17 +4,15 @@
 * [HTML 코드작성 규칙](html-guide.md)
   * [기본규칙](/html-guide.md#html-1-1)
   * [아이디](/html-guide.md#html-1-2)
-  * 클래스
-  * 들여쓰기
-  * 빈줄
-  * 주석
-  * 공백
-  * 특수기호
-  * 종료태그
-  * DOCTYPE
-  * 기본언어
-  * HEAD 태그 구조
-
-
+  * 클래스(/html-guide.md#html-1-3)
+  * 들여쓰기(/html-guide.md#html-1-4)
+  * 빈줄(/html-guide.md#html-1-5)
+  * 주석(/html-guide.md#html-1-6)
+  * 공백(/html-guide.md#html-1-7)
+  * 특수기호(/html-guide.md#html-1-8)
+  * 종료태그(/html-guide.md#html-1-9)
+  * DOCTYPE(/html-guide.md#html-1-10)
+  * 기본언어(/html-guide.md#html-1-11)
+  * HEAD 태그 구조(/html-guide.md#html-1-11)
 * [CSS 코드작성 규칙](css-guide.md)
 
