@@ -1,4 +1,4 @@
-Markup Coding Convention
+Erontend Coding Convention
 =======
 
 HTML, CSS, JavaScript Coding Convention.
