@@ -39,11 +39,30 @@ src(soures)
 > 주의사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
 
-```html
+```css
 <div id="boxToggle-1">토글박스</div>
 <div id="boxToggle-2">토글박스</div>
 ```
 
 ### 클래스
+아이디와 시각적 구분을 위해 _**하이픈 표기법**_을 사용합니다. 이미 수 많은 FrontEnd 개발 프레임워크 및 javascipt 플러그인의 코딩 스타일도 하이픈 표기법을 사용하고 있으며, 프로젝트의 코드의 일관성을 유지하기 위해서도 하이픈 표기법 사용을 권장합니다.
+
+> 주의사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
+
+```css
+.ly-wrapper {
+ position: relative;
+ overflow-x: hidden;
+}
+.ly-header {
+ position: fixed;
+ top: 0;
+ z-index: 100;
+ width: 100%;
+ height: 45px;
+ background-color: #428de7;
+
+}
+```
 
 
