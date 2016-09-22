@@ -62,11 +62,16 @@ CSS3는 정규표현식 방식처럼 속성 값에 따라 대응되는 선택자
 
 ```
 /* bad */
+/* 지정한 문자열이 속성값에 포함하는 요소에 대응 */
 .regex-selector[type*="value"] {...}
+/* 지정한 문자열이 속성 값으로 시작하는 요소에 대응 */
 .regex-selector[type^="value"] {...}
+/* 지정한 문자열이 속성값으로 끝나는 요소에 대응 */
 .regex-selector[type$="value"] {...}
+/* 지정한 문자열이 공백으로 나누어진 속성값을 포함하는 요소에 대응 */
 .regex-selector[type~="value"] {...}
-.regex-selector[type!="value"] {...}
+/* 지정한 문자열이 '-'로 나누어진 속성값을 포함하는 요소에 대응 */
+.regex-selector[type|="value"] {...}
 ```
 
 다음 두 경우는 성능에 영향을 미치지 않는다.
