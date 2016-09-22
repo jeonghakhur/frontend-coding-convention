@@ -28,17 +28,13 @@
 
 이 4개의 규칙들은 스타일 규칙을 적용하는데 기본적인 역할을 하므로 이해하는 것이 중요합니다.
 
-
-
 **키 선택자**
 
-선택자의 마지막 선택자를 의미합니다**. **아래 코드에서 키 선택자는 img, p, \[title\]이 됩니다. 따라 마지막 작성 
+선택자의 마지막 선택자를 의미합니다**. **아래 코드에서 키 선택자는 img, p, \[title\]이 됩니다. 따라 마지막 작성된 키 선택를 기준으로 규칙을 분류할 수 있습니다.
 
 ```
 a img, div > p, h1 + [title] {...}
 ```
-
-
 
 **ID 규칙**
 
@@ -52,7 +48,7 @@ treeitem > treerow > treecell#myCell:active {…} /* 이것도 ID 규칙이다. 
 
 ```
 button.toolbarButton {…} /* Class 규칙 */
-.fancyText {…}	/* Class 규칙 */
+.fancyText {…}    /* Class 규칙 */
 menuitem > .menu-left[checked="true"] {…} /* Class 규칙 */
 ```
 
@@ -68,7 +64,7 @@ input[type="checkbox"] {…} /* Tag 규칙 */
 
 ```
 [hidden="true"] {…} /* universal 규칙 */  
-* {…}		/* universal 규칙 */
+* {…}        /* universal 규칙 */
 tree > [collapsed="true"] {…} /* universal 규칙 */
 ```
 
