@@ -353,6 +353,7 @@ font-family: 'ns-r';
 src: url('../font/NotoSans/NotoSans-Light.eot?#iefix') format('embedded-opentype');
 
 background: url('../img/bg-btn-collapse.png') no-repeat;
+
 content: '';
 
 
