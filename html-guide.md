@@ -9,7 +9,7 @@
 
 ### 아이디
 
-아이디는 _**소문자 카멜 표기법**_ 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
+아이디는 **_소문자 카멜 표기법_** 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
 
 > 주의 사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
@@ -25,7 +25,7 @@
 
 #### 클래스
 
-아이디와 시각적 구분을 위해 _**하이픈 표기법**_ 을 사용합니다.
+아이디와 시각적 구분을 위해 **_하이픈 표기법_** 을 사용합니다.
 
 이미 수 많은 FrontEnd 개발 프레임워크 및 javascipt 플러그인의 코딩 스타일도 하이픈 표기법을 사용하고 있으며, 프로젝트의 코드의 일관성을 유지하기 위해서도 하이픈 표기법 사용을 권장합니다.
 
@@ -163,19 +163,49 @@ HTML 언어 코드 참조 : [http:\/\/www.w3schools.com\/tags\/ref\_language\_co
 
 &lt;head&gt;요소는 &lt;html&gt; 태그와 &lt;body&gt; 태그 사이에 위치합니다. 일반적으로 &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;를 정의합니다.
 
-인코딩 : 문서의 기본 인코딩은 uft-8로 설정합니다. 다른 인코딩 방식을 사용해야 할 경우 개발팀과 협의하에 결정합니다.
+**인코딩**
 
-IE 랜더링 모드 : IE브라우저에서 가장 최신 표준모드로 보여지도록 설정합니다.
+문서의 기본 인코딩은 uft-8로 설정합니다. 다른 인코딩 방식을 사용해야 할 경우 개발팀과 협의하에 결정합니다.
 
-제목 : 본문 제목을 작성합니다.
+```
+<meta charset="utf-8">
+```
 
-뷰포트 : 디바이스 상에서 최초 페이지를 로딩할 때 확대정도, 최대 확대비율, 최소 확대비율 등을 다루는 속성입니다.
+**IE 랜더링 모드**
 
-파비콘 : 파비콘은 웹페이지에 접속했을때, 상단 탭에 보여지는 아이콘을 말합니다. 크로스브라우징을 지원해야한다면 웹 사이트의 루트 디렉토리에 16x16과 32x32의 favicon.ico 파일을 넣어 둡니다.
+IE브라우저에서 가장 최신 표준모드로 보여지도록 설정합니다.
 
-파인콘에 대하여 자세히 알아보기 : [http:\/\/webdir.tistory.com\/337](http://webdir.tistory.com/337)
+```
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+```
 
-뷰
+**제목**
+
+본문 제목을 작성합니다.
+
+```
+<title></title>
+```
+
+**뷰포트**
+
+디바이스 상에서 최초 페이지를 로딩할 때 확대정도, 최대 확대비율, 최소 확대비율 등을 다루는 속성입니다.
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+뷰포트 더 알아보기 : [https:\/\/developer.mozilla.org\/ko\/docs\/Mozilla\/Mobile\/Viewport\_meta\_tag](https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag)
+
+**파비콘**
+
+파비콘은 웹페이지에 접속했을때, 상단 탭에 보여지는 아이콘을 말합니다. 크로스브라우징을 지원해야한다면 웹 사이트의 루트 디렉토리에 16x16과 32x32의 favicon.ico 파일을 넣어 둡니다.
+
+```
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+```
+
+파인콘 더 알아보기 : [http:\/\/webdir.tistory.com\/337](http://webdir.tistory.com/337)
 
 ```
 <!doctype html>
