@@ -330,7 +330,6 @@ html {
 
 * @charset 속성의 값
 
-
 ```
 @charset "uft-8";
 ```
@@ -341,9 +340,18 @@ html {
 
 * font-family 속성의 폰트명에 공백이 포함된 경우와 한글명의 폰트를 사용한 경우
 
+
+@font-face 속성의 url 값 및 format 값 
+
 * background 속성의 url 이미지 경로
+
 * content 속성의 값
 * @font-face 속성의 url 값 및 format 값
+
+```
+font-family: 'ns-r';
+
+```
 
 
 
