@@ -64,7 +64,27 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 <!--// 2016.07.20 객권리안내문 추가 -->
 ```
 
-
 ### 공백
 
-###
+태그명과 애트리뷰트, 애트리뷰트와 애트리뷰트 사이에 한 개의 공백이 필요하며 한개 이상의 공백은 사용하지 않습니다.
+
+> [Doctypes](http://www.w3schools.com/tags/tag_doctype.asp)이
+ HTML5가 아닌 경우 종료 태그가 없는 태그의 닫는 규칙 앞에도 한 개의 공백이 필요합니다. 
+
+```javascript
+// Doctypes HTML5일 경우
+<input type="text>
+
+// Doctypes XHTML일 경우
+<input type="text" />
+```
+
+### 특수기호
+
+특수 기호는 문자 엔티티를 참조하여 작성합니다.
+
+자주 사용하는 특수무자는 다음과 같습니다.
+
+* [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp)(http://)
+
+
