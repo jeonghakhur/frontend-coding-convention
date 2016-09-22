@@ -346,8 +346,6 @@ html {
 
 * content 속성의 값
 
-* @font-face 속성의 url 값 및 format 값
-
 ```
 font-family: 'ns-r';
 
