@@ -13,7 +13,7 @@
   * 종료태그
   * DOCTYPE
   * 기본언어
-  * HEAD 태그의 구조
+  * HEAD 태그 구조
 
 
 * [CSS 코드작성 규칙](css-guide.md)
