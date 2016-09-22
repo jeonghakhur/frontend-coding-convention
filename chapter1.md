@@ -39,7 +39,7 @@ src(soures)
 > 주의사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
 
-```css
+```HTML
 <div id="boxToggle-1">토글박스</div>
 <div id="boxToggle-2">토글박스</div>
 ```
