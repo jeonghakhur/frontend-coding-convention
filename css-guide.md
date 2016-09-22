@@ -43,7 +43,7 @@ section div span {...}
 
 스타일 엔진은 키 선택자로 부터 시작하여 왼쪽으로 이동하면서 엘리먼트가 규칙에 적합한지를 확인하게 됩니다. 그러므로 엘리먼트에 클래스를 추가하여 규칙을 최소화하여 사용하는 방법으로 랜더링 속도를 높일 수 있습니다.
 
-**애트리뷰트 서낵자의 사용**
+**애트리뷰트 선택자의 사용**
 
 CSS3는 정규표현식 방식처럼 속성 값에 따라 대응되는 선택자가 추가 되었습니다. 그러나 성능적인 측면으로 살펴보면, 클래스를 기반으로 하는 방식 보다 속도가 떨어지게 됩니다.
 
@@ -54,16 +54,15 @@ CSS3는 정규표현식 방식처럼 속성 값에 따라 대응되는 선택자
 .regex-selector[type$="value"] {...}
 .regex-selector[type~="value"] {...}
 .regex-selector[type!="value"] {...}
-
-/* better */
-/* 다음 두 경우
-.regex-selector[type="value"] {...}
-.regex-selector[type] {...}
 ```
 
 다음 두 경우는 성능에 영향을 미치지 않는다.
 
-
+```
+/* better */
+.regex-selector[type="value"] {...}
+.regex-selector[type] {...}
+```
 
 **전체 선택자의 사용.**
 
