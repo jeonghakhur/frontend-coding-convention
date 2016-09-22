@@ -1,6 +1,6 @@
 # Summary
 
-* [Front-End Coding Convention](README.md)
+* [Coding Convention](README.md)
 * [HTML 코드작성 규칙](html-guide.md)
     * [기본규칙](html-guide.md#html-1-1)
     * [아이디](html-guide.md#html-1-2)
