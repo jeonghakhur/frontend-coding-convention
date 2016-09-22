@@ -207,7 +207,7 @@ IE브라우저에서 가장 최신 표준모드로 보여지도록 설정합니�
 
 파인콘 더 알아보기 : [http:\/\/webdir.tistory.com\/337](http://webdir.tistory.com/337)
 
-* HTML 코드의 기본 구조 *
+**HTML 코드의 기본 구조**
 
 ```
 <!doctype html>
