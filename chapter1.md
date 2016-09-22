@@ -50,6 +50,7 @@ src(soures)
 > 주의사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
 ```css
+* css *
 .ly-wrapper {
   position: relative;
   overflow-x: hidden;
@@ -64,11 +65,43 @@ src(soures)
 }
 ```
 ```javascript
+<!-- HTML -->
 <div class="slide-label n-3 back-swiper">
   <div class="swiper-wrapper">
   ...
   </div>
 </div>
 ```
+
+### 함수
+
+일반 함수는 원시형 데이터 변수와 시각적으로 구분할 수 있도록 _**소문자 낙타 표기법**_을 사용합니다.
+
+> 주의사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
+
+```javascript
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+```
+
+### 생성자
+
+```javascript
+function myFunction(p1, p2) {
+ return p1 * p2;
+}
+```
+
+### 변수
+
+```javascript
+function myFunction(p1, p2) {
+ return p1 * p2;
+}
+```
+
+
 
 
