@@ -9,7 +9,7 @@
 
 ### 아이디
 
-아이디는 _**소문자 카멜 표기법**_ 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
+아이디는 **_소문자 카멜 표기법_** 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
 
 > 주의 사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
@@ -25,7 +25,7 @@
 
 #### 클래스
 
-아이디와 시각적 구분을 위해 _**하이픈 표기법**_ 을 사용합니다.
+아이디와 시각적 구분을 위해 **_하이픈 표기법_** 을 사용합니다.
 이미 수 많은 FrontEnd 개발 프레임워크 및 javascipt 플러그인의 코딩 스타일도 하이픈 표기법을 사용하고 있으며, 프로젝트의 코드의 일관성을 유지하기 위해서도 하이픈 표기법 사용을 권장합니다.
 
 > 주의 사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
@@ -160,17 +160,52 @@ HTML 언어 코드 참조 : [http:\/\/www.w3schools.com\/tags\/ref\_language\_co
 
 ### HEAD 태그 구조
 
-meta, title, link, script 순서로 작성합니다.
+&lt;head&gt;요소는 &lt;html&gt; 태그와 &lt;body&gt; 태그 사이에 위치합니다. 일반적으로 &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;를 정의합니다.
 
-### meta 태그
+
+
+
+
+```
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+   ...
+    <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+```
+
+문자집합
+
+스타일
+
+링크
+
+스크립트
+
+
 
 **인코딩 : **문서의 기본 인코딩은 uft-8로 설정합니다. 다른 인코딩 방식을 사용해야 할 경우 개발팀과 협의하에 결정합니다.
 
+뷰포트 : 설정
 
-
-
-
-
-
-  브라우저 버전에 혹은 브라우저의 벤더에 따라 특정 기능을 지원하지 못하는 상황이 발생하게 되는데 이러한 것을 파편화라고 합니다. 개발자에게는 브라우저 파편화는 골치 아픈 문제 중 하나인데 파편화를 줄이기 위해, 비슷한 결과를 만들기 위한 방법을 'Shim'이라고 합니다. 
+브라우저 버전에 혹은 브라우저의 벤더에 따라 특정 기능을 지원하지 못하는 상황이 발생하게 되는데 이러한 것을 파편화라고 합니다. 개발자에게는 브라우저 파편화는 골치 아픈 문제 중 하나인데 파편화를 줄이기 위해, 비슷한 결과를 만들기 위한 방법을 'Shim'이라고 합니다.
 
