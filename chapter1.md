@@ -39,7 +39,7 @@ src(soures)
 > 주의사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
 
-```xml
+```javascript
 <div id="boxToggle-1">토글박스</div>
 <div id="boxToggle-2">토글박스</div>
 ```
@@ -51,18 +51,24 @@ src(soures)
 
 ```css
 .ly-wrapper {
- position: relative;
- overflow-x: hidden;
+  position: relative;
+  overflow-x: hidden;
 }
 .ly-header {
- position: fixed;
- top: 0;
- z-index: 100;
- width: 100%;
- height: 45px;
- background-color: #428de7;
-
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 45px;
+  background-color: #428de7;
 }
+```
+```javascript
+<div class="slide-label n-3 back-swiper">
+  <div class="swiper-wrapper">
+  ...
+  </div>
+</div>
 ```
 
 
