@@ -354,5 +354,3 @@ background: url('../img/bg-btn-collapse.png') no-repeat;
 content: '';
 ```
 
-### 예약어
-
