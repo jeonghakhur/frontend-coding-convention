@@ -87,11 +87,18 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 | Character | Entity Name |
 | --- | --- |
 |  | Entity Name |
-| " | &quot; |
-| & | &amp; |
+| " | " |
+| & | & |
 | &lt; | &lt; |
 | &gt; | &gt; |
 
 * [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp): [http:\/\/www.w3schools.com\/charsets\/ref\_html\_entities\_4.asp](http://www.w3schools.com/charsets/ref_html_entities_4.asp)
 
+### 종료태그
+
+Doctypes 선언에 따라 종료태그가 없는 요소에 닫는 기호를 생략할 수 있습니다. HTML5를 사용한다면 닫는 기호를 생략해서 문서를 작성하고 XHTML을 사용한 경우는 닫는 기호를 반드시 사용합니다.
+
+```
+////
+```
 
