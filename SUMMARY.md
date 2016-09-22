@@ -24,8 +24,8 @@
     * [공백](html-guide.md#css-2-7)
     * [속성 우선순위](html-guide.md#css-2-8)
     * [세미콜론](html-guide.md#css-2-9)
-    * [빈줄](html-guide.md#css-2-10)
+    * [빈 줄](html-guide.md#css-2-10)
     * [주석](html-guide.md#css-2-11)
-    * [큰 따옴표](html-guide.md#css-2-12)
-    * [작은 따옴표](html-guide.md#css-2-13)
+    * [큰따옴표](html-guide.md#css-2-12)
+    * [작은따옴표](html-guide.md#css-2-13)
 
