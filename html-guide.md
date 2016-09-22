@@ -9,7 +9,7 @@
 
 ### 아이디
 
-아이디는 **_소문자 카멜 표기법_** 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
+아이디는 _**소문자 카멜 표기법**_ 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
 
 > 주의 사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
@@ -25,7 +25,7 @@
 
 #### 클래스
 
-아이디와 시각적 구분을 위해 **_하이픈 표기법_** 을 사용합니다.
+아이디와 시각적 구분을 위해 _**하이픈 표기법**_ 을 사용합니다.
 이미 수 많은 FrontEnd 개발 프레임워크 및 javascipt 플러그인의 코딩 스타일도 하이픈 표기법을 사용하고 있으며, 프로젝트의 코드의 일관성을 유지하기 위해서도 하이픈 표기법 사용을 권장합니다.
 
 > 주의 사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
@@ -116,8 +116,14 @@ Doctypes 선언에 따라 종료태그가 없는 요소에 닫는 기호를 생�
 보통 DTD라고 표현을 하며, HTML 문서를 작성할 때 가장 먼저 선언하게 됩니다. HTML5를 기본적으로 사용하며, 크로스브라우징 범위에 IE9 이하 브라우저가 포함된다면 조건부 주석을 사용하여 'Shim[^1]' 처리합니다. 프로젝트의 정책상 HTML5를 사용하지 못하는 경우 HTML 4.01 Transitional, XHTML 1.0 Transitional 등을 사용할 수 있습니다.
 
 > 도큐먼트 선언은 대소문자를 구분하지 않습니다.
-> 
-> Shim이란
+
+```
+// HTML 5
+<!DOCTYPE html>
+
+// XHTML 1.0 Transitional
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+```
 
 도큐먼트 타입 종류 : [http:\/\/www.w3schools.com\/tags\/tag\_doctype.asp](http://www.w3schools.com/tags/tag_doctype.asp)
 
@@ -151,6 +157,10 @@ lang 에크리뷰트는 User Agent가 언어를 올바르게 해석할 수 있�
 ```
 
 국가코드 : [http:\/\/www.w3schools.com\/tags\/ref\_language\_codes.asp](http://www.w3schools.com/tags/ref_language_codes.asp)
+
+
+
+
 
 브라우저 버전에 혹은 브라우저의 벤더에 따라 특정 기능을 지원하지 못하는 상황이 발생하게 되는데 이러한 것을 파편화라고 합니다. 개발자에게는 브라우저 파편화는 골치 아픈 문제 중 하나인데 파편화를 줄이기 위해, 비슷한 결과를 만들기 위한 방법을 'Shim'이라고 합니다.
 
