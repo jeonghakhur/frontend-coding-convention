@@ -9,7 +9,7 @@
 
 ### 아이디
 
-아이디는 **_소문자 카멜 표기법_** 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
+아이디는 _**소문자 카멜 표기법**_ 을 사용합니다. 스타일 지정을 위해 사용하지 않으며, DOM 조작을 위해 사용해야 합니다.
 
 > 주의 사항: 숫자, 대문자, 특수문자로 시작할 수 없습니다.
 
@@ -25,7 +25,7 @@
 
 #### 클래스
 
-아이디와 시각적 구분을 위해 **_하이픈 표기법_** 을 사용합니다.
+아이디와 시각적 구분을 위해 _**하이픈 표기법**_ 을 사용합니다.
 
 이미 수 많은 FrontEnd 개발 프레임워크 및 javascipt 플러그인의 코딩 스타일도 하이픈 표기법을 사용하고 있으며, 프로젝트의 코드의 일관성을 유지하기 위해서도 하이픈 표기법 사용을 권장합니다.
 
@@ -161,7 +161,7 @@ HTML 언어 코드 참조 : [http:\/\/www.w3schools.com\/tags\/ref\_language\_co
 
 ### HEAD 태그 구조
 
-&lt;head&gt;요소는 &lt;html&gt; 태그와 &lt;body&gt; 태그 사이에 위치합니다. 일반적으로 &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;를 정의합니다.
+&lt;head&gt;요소는 &lt;html&gt; 태그와 &lt;body&gt; 태그 사이에 위치합니다. 일반적으로 &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;를 정의합니다.
 
 **인코딩**
 
@@ -207,7 +207,40 @@ IE브라우저에서 가장 최신 표준모드로 보여지도록 설정합니�
 
 파인콘 더 알아보기 : [http:\/\/webdir.tistory.com\/337](http://webdir.tistory.com/337)
 
-**HTML 코드의 기본 구조**
+**스타일 선언**
+
+CSS는 외부 파일에 작성해 사용합니다. 이러한 작업 방식을 External Type 방식이라 명칭합니다.
+
+```css
+/*  External Type  */
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+```
+
+이메일 템플릿 작업이나 단발성으로 작성이 필요하다면 해당 파일의 &lt;head&gt; 요소에 &lt;style&gt; 태그를 사용해 작성합니다. 
+
+```
+/* Internal Type */
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
+```
+
+문서의 스타일을 어떠한 조작이나 이벤트로 인하여 동적으로 변경해야하는 경우에는 해당 요소의 style 애트리뷰트를 사용해 스타일을 직접 작성할 수 있습니다.
+
+```
+/* Inline Type */
+<div style="display: none">
+...
+</div>
+```
+
+
+
+**HTML 파일의 기본 구조**
 
 ```
 <!doctype html>
