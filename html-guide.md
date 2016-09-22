@@ -71,11 +71,12 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 >  HTML5가 아닌 경우 종료 태그가 없는 태그의 닫는 규칙 앞에도 한 개의 공백이 필요합니다.
 
 ```javascript
-// Doctypes HTML5일 경우
-<input type="text>
 
-// Doctypes XHTML일 경우
-<input type="text" />
+<label for="checkboxA-1" class="label">체크 레이블</label>
+<input type="checkbox" name="CA-1" id="checkboxA-1" class="checkbox">
+
+// Doctypes XHTML일 경우 종료 태그 앞에도 한 개의 공백이 들어갑니다.
+<img src="/img/logo.png" alt="logo" />
 ```
 
 ### 특수기호
@@ -98,13 +99,11 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 
 Doctypes 선언에 따라 종료태그가 없는 요소에 닫는 기호를 생략할 수 있습니다. HTML5를 사용한다면 닫는 기호를 생략해서 문서를 작성하고 XHTML을 사용한 경우는 닫는 기호를 반드시 사용합니다.
 
-```bash
+```
 // Doctypes HTML5일 경우
 <input type="text>
 
 // Doctypes XHTML일 경우
 <input type="text" />
 ```
-
-
 
