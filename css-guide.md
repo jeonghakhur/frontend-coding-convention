@@ -8,8 +8,6 @@
 
 * 마지막 속성 값의 끝에도 세미콜론을 사용합니다.
 
-* 축약의 값을 사용하지 않습니다.
-
 * 방향에 따라 속성을 지정해야 하는 경위 top, right, bottom, left 순으로 작성합니다.
 
 
@@ -212,6 +210,8 @@ HTML 문서 수정에 따른 CSS 파일 수정을 최소화하기 위해서 태�
 @import url(main-2.css);
 ```
 
+줄바꿈
+
 ### 들여쓰기
 
 코드의 가독성과 유지보수를 위하여 중첩의 깊이에 따라 공백 2칸을 들여쓰기 합니다. 운영 서비스에 반영할 경우 minify하여 파일 용량을 줄여 배포하도록 합니다.
@@ -249,15 +249,72 @@ input {...}
 }
 ```
 
-### 축약
+### 속성 우선순위
 
-### 속성정렬
+아래의 나와 있는 순서로 작성하는 것을 권장합니다. csscomb 와 같은 빌드 스크립트를 이용하여 서비스 반영 전에 우선순위 및 코드를 정리할 수 도 있습니다. 
 
+1. display
+
+2. list-style
+
+3. position
+
+4. float
+
+5. clear
+
+6. width \/ height
+
+7. padding \/ margin
+
+8. border \/ background
+
+9. color \/ font
+
+10. text-decoration
+
+11. text-align \/ vertical-align
+
+12. white-space
+
+13. other text
+
+14. content
+
+
+cssComb.js :[ https:\/\/github.com\/csscomb\/csscomb.js](https://github.com/csscomb/csscomb.js)
+cssComb 속성 우선 순위 설정 보기 : [https:\/\/github.com\/csscomb\/csscomb.js\/tree\/dev\/config](https://github.com/csscomb/csscomb.js/tree/dev/config)
 ### 세미콜론
+
+마지막 속성의 값 뒤에도 세미 콜론을 작성합니다. 속성과 속성 사이에 세미콜론이 빠져 발생하는 오류를 사전에 방지하고, 속성의 추가 삭제 및 위치 변경에도 효율적이기 때문입니다.
+
+```
+.btn-type-2.checked {
+  color: #fff;
+  background-color: #428de7;
+  border: none;
+  border: 1px solid #428de7;
+}
+```
 
 ### 빈줄
 
+CSS 파일에는 빈줄을 사용하지 않으며 빈줄이 들어간 경우 서비스 반영 전 빈줄을 제거하고 배포합도록 합니다.
+
+```
+/* bad */
+body {
+  ...
+}
+
+.ly-wrapper {
+  ...
+}
+```
+
 ### 주석
+
+
 
 ### 큰 따옴표
 
