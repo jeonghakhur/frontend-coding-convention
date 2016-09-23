@@ -103,13 +103,13 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 
 | Character | Entity Name |
 | --- | --- |
-|  | Entity Name |
-| " | " |
-| & | & |
-| &lt; | &lt; |
-| &gt; | &gt; |
+| " | &amp;quot; |
+| & | &amp;amp; |
+| &lt; | &amp;lt; |
+| &gt; | &amp;gt; |
+| 공백 | &amp;nbsp; |
 
-* [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp): [http://www.w3schools.com/charsets/ref\_html\_entities\_4.asp](http://www.w3schools.com/charsets/ref_html_entities_4.asp)
+* 엔티티 문자표: [http://www.w3schools.com/charsets/ref\_html\_entities\_4.asp](http://www.w3schools.com/charsets/ref_html_entities_4.asp)
 
 ### 종료태그 {#html-1-9}
 
