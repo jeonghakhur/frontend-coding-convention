@@ -265,17 +265,17 @@ input {...}
 
 5. clear
 
-6. width \/ height
+6. width / height
 
-7. padding \/ margin
+7. padding / margin
 
-8. border \/ background
+8. border / background
 
-9. color \/ font
+9. color / font
 
 10. text-decoration
 
-11. text-align \/ vertical-align
+11. text-align / vertical-align
 
 12. white-space
 
@@ -285,9 +285,9 @@ input {...}
 
 
 
-cssComb.js :[ https:\/\/github.com\/csscomb\/csscomb.js](https://github.com/csscomb/csscomb.js)
+cssComb.js :[ https://github.com/csscomb/csscomb.js](https://github.com/csscomb/csscomb.js)
 
-cssComb 속성 우선 순위 설정 보기 : [https:\/\/github.com\/csscomb\/csscomb.js\/tree\/dev\/config](https://github.com/csscomb/csscomb.js/tree/dev/config)
+cssComb 속성 우선 순위 설정 보기 : [https://github.com/csscomb/csscomb.js/tree/dev/config](https://github.com/csscomb/csscomb.js/tree/dev/config)
 
 ### 세미콜론 {#css-1-9}
 
@@ -357,4 +357,3 @@ src: url('../font/NotoSans/NotoSans-Light.eot?#iefix') format('embedded-opentype
 background: url('../img/bg-btn-collapse.png') no-repeat;
 content: '';
 ```
-

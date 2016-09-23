@@ -109,7 +109,7 @@ body 태그 안의 모든 요소는 중첩의 깊이에 따라 1탭 들여 씁�
 | &lt; | &lt; |
 | &gt; | &gt; |
 
-* [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp): [http:\/\/www.w3schools.com\/charsets\/ref\_html\_entities\_4.asp](http://www.w3schools.com/charsets/ref_html_entities_4.asp)
+* [엔티티 문자표](http://www.w3schools.com/charsets/ref_html_entities_4.asp): [http://www.w3schools.com/charsets/ref\_html\_entities\_4.asp](http://www.w3schools.com/charsets/ref_html_entities_4.asp)
 
 ### 종료태그 {#html-1-9}
 
@@ -141,27 +141,27 @@ Doctypes 선언에 따라 종료 태그가 없는 요소에 닫는 기호를 생
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
 
-도큐먼트 타입 종류 : [http:\/\/www.w3schools.com\/tags\/tag\_doctype.asp](http://www.w3schools.com/tags/tag_doctype.asp)
+도큐먼트 타입 종류 : [http://www.w3schools.com/tags/tag_doctype.asp](http://www.w3schools.com/tags/tag_doctype.asp)
 
 **html5 및 반응형 shim 처리 방법**
 
 ```
 <!--[if lt IE 9]>
     <script src="../js/lib/html5shiv.js"></script>
-    <script src="../js/lib/respond.min.js></script> 
+    <script src="../js/lib/respond.min.js></script>
 <![endif]-->
 ```
 
-html5shiv.js 다운로드 : [https:\/\/github.com\/aFarkas\/html5shiv](https://github.com/aFarkas/html5shiv)
+html5shiv.js 다운로드 : [https://github.com/aFarkas/html5shiv](https://github.com/aFarkas/html5shiv)
 
-IE6 ~ IE8 반응형 구현 : [https:\/\/github.com\/scottjehl\/Respond](https://github.com/scottjehl/Respond)
+IE6 ~ IE8 반응형 구현 : [https://github.com/scottjehl/Respond](https://github.com/scottjehl/Respond)
 
 ### 기본언어 {#html-1-11}
 
 lang 애트리뷰트는 User Agent가 언어를 올바르게 해석할 수 있게 도와주며, 검색과 음성 장치에 활용됩니다.  en\(영어\), ja\(일본어\), zh-ch\(중국어\)입니다.
 
 ```
-// HTML 
+// HTML
 <html lang="en">
 ...
 </html>
@@ -172,7 +172,7 @@ lang 애트리뷰트는 User Agent가 언어를 올바르게 해석할 수 있�
 </html>
 ```
 
-HTML 언어 코드 참조 : [http:\/\/www.w3schools.com\/tags\/ref\_language\_codes.asp](http://www.w3schools.com/tags/ref_language_codes.asp)
+HTML 언어 코드 참조 : [http://www.w3schools.com/tags/ref_language_codes.asp](http://www.w3schools.com/tags/ref_language_codes.asp)
 
 ### HEAD 태그 구조 {#html-1-12}
 
@@ -210,7 +210,7 @@ IE 브라우저에서 가장 최신 표준모드로 보이도록 설정합니다
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-뷰포트 더 알아보기 : [https:\/\/developer.mozilla.org\/ko\/docs\/Mozilla\/Mobile\/Viewport\_meta\_tag](https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag)
+뷰포트 더 알아보기 : [https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag](https://developer.mozilla.org/ko/docs/Mozilla/Mobile/Viewport_meta_tag)
 
 **파비콘**
 
@@ -220,7 +220,7 @@ IE 브라우저에서 가장 최신 표준모드로 보이도록 설정합니다
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 ```
 
-파인콘 더 알아보기 : [http:\/\/webdir.tistory.com\/337](http://webdir.tistory.com/337)
+파비콘 더 알아보기 : [http://webdir.tistory.com/337](http://webdir.tistory.com/337)
 
 **스타일 선언**
 
@@ -255,7 +255,7 @@ body {
 
 **자바스크립트 선언**
 
-웹 브라우저가 렌더링을 마치기 전에 자바스크립트로 어떠한 동작을 실행해야 한다면 &lt;head&gt; 요소 안에 스크립트를 선언합니다. 이런 상황이 아니라면 &lt;\/body&gt; 태그 앞에 자바스크립트를 작성하는 것이 성능적인 측면에서 좋습니다.
+웹 브라우저가 렌더링을 마치기 전에 자바스크립트로 어떠한 동작을 실행해야 한다면 &lt;head&gt; 요소 안에 스크립트를 선언합니다. 이런 상황이 아니라면 &lt;/body&gt; 태그 앞에 자바스크립트를 작성하는 것이 성능적인 측면에서 좋습니다.
 
 ```
 // 브라우저가 랜더링을 마치기 전에 실행할 파일을 선언한다.
@@ -291,7 +291,7 @@ body {
    ...
     <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
     <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+    window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"></script>')
     </script>
 
     <script src="js/plugins.js"></script>
@@ -300,5 +300,4 @@ body {
 </html>
 ```
 
-[^1]: Shim : 브라우저 버전에 혹은 브라우저의 벤더에 따라 특정 기능을 지원하지 못하는 상황이 발생하게 되는데 이러한 것을 파편화라고 합니다. 개발자에게는 브라우저 파편화는 골치 아픈 문제 중 하나인데 파편화를 줄이기 위해, 비슷한 결과를 만들기 위한 방법을 'Shim'이라고 합니다. 
-
+[^1]: Shim : 브라우저 버전에 혹은 브라우저의 벤더에 따라 특정 기능을 지원하지 못하는 상황이 발생하게 되는데 이러한 것을 파편화라고 합니다. 개발자에게는 브라우저 파편화는 골치 아픈 문제 중 하나인데 파편화를 줄이기 위해, 비슷한 결과를 만들기 위한 방법을 'Shim'이라고 합니다.
