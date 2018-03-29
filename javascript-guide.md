@@ -1,6 +1,6 @@
 ## Javascript 코드 작성규칙
 
-### 함수
+### 함수 {#javascript-1-1}
 
 * 한문자 이름은 피하십시오. 이름에서 의도를 읽을 수 있도록 하십시오.
 
@@ -51,7 +51,7 @@ var persion = {
 };
 ```
 
-### 변수(Variable)
+### 변수(Variable) {#javascript-1-2}
 
 * 변수는 밑줄로 단어를 분리하여 사용하십시오. 이렇게 하면 함수와 함수가 아닌 나머지 식별자(즉 원시 데이터 타입과 객체)를 시각적으로 구별하는 데 도움이 됩니다.
 
@@ -170,7 +170,7 @@ function() {
 }
 ```
 
-### 오브젝트(Objects)
+### 오브젝트(Objects) {#javascript-1-3}
 
 * Object를 만들 때는 리터럴 구문을 사용합니다.
 ```js
@@ -192,7 +192,7 @@ var this-is-my-object = {};
 var thisIsMyObject = {};
 ```
 
-### 배열(Arrays)
+### 배열(Arrays) {#javascript-1-4}
 
 * 배열을 만들 때 리터럴 구문을 사용합니다.
 
@@ -204,7 +204,7 @@ var items = new Array();
 var items = [];
 ```
 
-### 문자열(Strings)
+### 문자열(Strings) {#javascript-1-5}
 
 * 문자열은 작은 따옴표 `''`를 사용합니다.
 
@@ -281,7 +281,7 @@ function inbox(messages) {
 }
 ```
 
-### 속성(Propertie)
+### 속성(Propertie) {#javascript-1-6}
 
 * 속성에 액세스하려면 도트.를 사용합니다.
 
@@ -313,7 +313,7 @@ function getProp(prop) {
 var isJedi = getProp('jedi');
 ```
 
-### 암묵적 타입캐스팅 피하기
+### 암묵적 타입캐스팅 피하기 {#javascript-1-7}
 
 * == 나 != 보다는 === 와 !== 를 사용합니다.
 
@@ -330,7 +330,7 @@ if (zero === false) {
 }
 ```
 
-### 블록(Blocks)
+### 블록(Blocks) {#javascript-1-8}
 
 * 수행 블록은 중괄호 ({})를 사용합니다.
 
@@ -356,7 +356,7 @@ function() {
 }
 ```
 
-### 주석(Comments)
+### 주석(Comments) {#javascript-1-9}
 
 * 복수행의 코멘트는 `/** ... */` 를 사용해 주십시오. 그 안에는 설명과 모든 매개 변수와 반환 값에 대한 형식과 값을 설명합니다.
 
@@ -445,7 +445,7 @@ function Calculator() {
   return this;
 }
 ```
-### 공백(Whitespace) 및 들여쓰기(indentation)
+### 공백(Whitespace) 및 들여쓰기(indentation) {#javascript-1-10}
 
 * 탭에는 공백 2개를 설정하십시오.
 
@@ -571,7 +571,7 @@ var leds = stage.selectAll('.led')
     .call(tron.led);
 ```
 
-### 빈줄
+### 빈줄 {#javascript-1-11}
 
 * 파일의 마지막에는 하나의 빈줄을 넣어주세요.
 
@@ -591,7 +591,7 @@ var leds = stage.selectAll('.led')
 ```
 
 
-### jQuery
+### jQuery {#javascript-1-12}
 
 * jQuery Object의 변수 앞에는 $을 부여해 주십시오.
 
