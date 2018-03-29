@@ -1,6 +1,6 @@
 ## Javascript 코드 작성규칙
 
-### 명명규칙
+### 함수
 
 * 한문자 이름은 피하십시오. 이름에서 의도를 읽을 수 있도록 하십시오.
 
@@ -16,39 +16,15 @@ function query() {
 }
 ```
 
-* Object, 함수, 그리고 인스턴스로는 camelCase를 사용하십시오.
+* 소문자 낙타표기법(camelCase)을 사용하십시오.
 
 ```js
-// bad
-var OBJEcttsssss = {};
-var this_is_my_object = {};
-var this-is-my-object = {};
-function c() {};
-var u = new user({
-  name: 'Bob Parr'
-});
-
-// good
-var thisIsMyObject = {};
 function thisIsMyFunction() {};
-var user = new User({
-  name: 'Bob Parr'
-});
 ```
 
 * Class와 생성자에는 PascalCase를 사용하십시오.
 
 ```js
-// bad
-function user(options) {
-  this.name = options.name;
-}
-
-var bad = new user({
-  name: 'nope'
-});
-
-// good
 function User(options) {
   this.name = options.name;
 }
@@ -58,21 +34,8 @@ var good = new User({
 });
 ```
 
-* 변수는 밑줄로 단어를 분리하여 사용하십시오. 이렇게 하면 함수와 함수가 아닌 나머지 식별자(즉 원시 데이터 타입과 객체)를 시각적으로 구별하는 데 도움이 됩니다.
-
-```js
-var first_name, favorite_bands, old_company_name;
-```
-
-* 상수 및 전역 변수는 모든 글자를 대문자로 사용하십시오.
-
-```js
-var PI = 3.14,
-    MAX_WIDTH = 960;
-```
-
-
 * private 메서드나 프로퍼티명에 접두어로 밑줄을 붙여 구별하기 쉽게 합니다.
+
 ```js
 // bad
 var persion = {
@@ -88,31 +51,122 @@ var persion = {
 };
 ```
 
-* this의 참조를 저장할 때 _this 를 사용하십시오.
+### 변수(Variable)
+
+* 변수는 밑줄로 단어를 분리하여 사용하십시오. 이렇게 하면 함수와 함수가 아닌 나머지 식별자(즉 원시 데이터 타입과 객체)를 시각적으로 구별하는 데 도움이 됩니다.
+
+```js
+var first_name, favorite_bands, old_company_name;
+```
+
+* 상수 및 전역 변수는 모든 글자를 대문자로 사용하십시오.
+
+```js
+var PI = 3.14,
+    MAX_WIDTH = 960;
+```
+
+* 변수를 선언 할 때는 항상 var를 사용합니다. 그렇지 않으면 전역 변수로 선언됩니다.
+
+```js
+// bad
+superPower = new SuperPower();
+
+// good
+var superPower = new SuperPower();
+```
+
+* 여러 변수를 선언하려면 하나의 var를 사용하여 변수마다 줄바꿈하여 선언합니다.
+
+```js
+// bad
+var items = getItems();
+var goSportsTeam = true;
+var dragonball = 'z';
+
+// good
+var items = getItems(),
+    goSportsTeam = true,
+    dragonball = 'z';
+```
+
+* 정의되지 않은 변수를 마지막으로 선언합니다. 이것은 나중에 이미 할당된 변수 중 하나를 지정해야하는 경우에 유용합니다.
+
+```js
+// bad
+var i, len, dragonball,
+    items = getItems(),
+    goSportsTeam = true;
+
+// bad
+var i, items = getItems(),
+    dragonball,
+    goSportsTeam = true,
+    len;
+
+// good
+var items = getItems(),
+    goSportsTeam = true,
+    dragonball,
+    length,
+    i;
+```
+
+* 변수의 할당은 스코프의 시작 부분에서 해주십시오.
 
 ```js
 // bad
 function() {
-  var self = this;
-  return function() {
-    console.log(self);
-  };
-}
+  test();
+  console.log('doing stuff..');
 
-// bad
-function() {
-  var that = this;
-  return function() {
-    console.log(that);
-  };
+  //..other stuff..
+
+  var name = getName();
+
+  if (name === 'test') {
+    return false;
+  }
+
+  return name;
 }
 
 // good
 function() {
-  var _this = this;
-  return function() {
-    console.log(_this);
-  };
+  var name = getName();
+
+  test();
+  console.log('doing stuff..');
+
+  //..other stuff..
+
+  if (name === 'test') {
+    return false;
+  }
+
+  return name;
+}
+
+// bad
+function() {
+  var name = getName();
+
+  if (!arguments.length) {
+    return false;
+  }
+
+  return true;
+}
+
+// good
+function() {
+  if (!arguments.length) {
+    return false;
+  }
+
+  var name = getName();
+
+  return true;
 }
 ```
 
@@ -125,6 +179,17 @@ var item = new Object();
 
 // good
 var item = {};
+```
+
+* 소문자 낙타표기법(camelCase)을 사용하십시오.
+
+```js
+// bad
+var OBJEcttsssss = {};
+var this_is_my_object = {};
+var this-is-my-object = {};
+// good
+var thisIsMyObject = {};
 ```
 
 ### 배열(Arrays)
@@ -246,112 +311,6 @@ function getProp(prop) {
 }
 
 var isJedi = getProp('jedi');
-```
-
-### 변수(Variable)
-
-* 변수를 선언 할 때는 항상 var를 사용합니다.. 그렇지 않으면 전역 변수로 선언됩니다.
-
-```js
-// bad
-superPower = new SuperPower();
-
-// good
-var superPower = new SuperPower();
-```
-
-* 여러 변수를 선언하려면 하나의 var를 사용하여 변수마다 줄바꿈하여 선언합니다.
-
-```js
-// bad
-var items = getItems();
-var goSportsTeam = true;
-var dragonball = 'z';
-
-// good
-var items = getItems(),
-    goSportsTeam = true,
-    dragonball = 'z';
-```
-
-* 정의되지 않은 변수를 마지막으로 선언합니다. 이것은 나중에 이미 할당된 변수 중 하나를 지정해야하는 경우에 유용합니다.
-
-```js
-// bad
-var i, len, dragonball,
-    items = getItems(),
-    goSportsTeam = true;
-
-// bad
-var i, items = getItems(),
-    dragonball,
-    goSportsTeam = true,
-    len;
-
-// good
-var items = getItems(),
-    goSportsTeam = true,
-    dragonball,
-    length,
-    i;
-```
-
-* 변수의 할당은 스코프의 시작 부분에서 해주십시오. 이것은 변수 선언과 Hoisting 관련 문제를 해결합니다.
-
-```js
-// bad
-function() {
-  test();
-  console.log('doing stuff..');
-
-  //..other stuff..
-
-  var name = getName();
-
-  if (name === 'test') {
-    return false;
-  }
-
-  return name;
-}
-
-// good
-function() {
-  var name = getName();
-
-  test();
-  console.log('doing stuff..');
-
-  //..other stuff..
-
-  if (name === 'test') {
-    return false;
-  }
-
-  return name;
-}
-
-// bad
-function() {
-  var name = getName();
-
-  if (!arguments.length) {
-    return false;
-  }
-
-  return true;
-}
-
-// good
-function() {
-  if (!arguments.length) {
-    return false;
-  }
-
-  var name = getName();
-
-  return true;
-}
 ```
 
 ### 암묵적 타입캐스팅 피하기
