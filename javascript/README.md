@@ -1,10 +1,10 @@
-## Javascript 코드 작성규칙
+# Javascript 코드 작성규칙
 
-### 함수 {#javascript-1-1}
+## 함수 {#javascript-1-1}
 
 * 한문자 이름은 피하십시오. 이름에서 의도를 읽을 수 있도록 하십시오.
 
-```js
+```javascript
 // bad
 function q() {
   // ...stuff...
@@ -16,15 +16,15 @@ function query() {
 }
 ```
 
-* 소문자 낙타표기법(camelCase)을 사용하십시오.
+* 소문자 낙타표기법\(camelCase\)을 사용하십시오.
 
-```js
+```javascript
 function thisIsMyFunction() {};
 ```
 
 * Class와 생성자에는 PascalCase를 사용하십시오.
 
-```js
+```javascript
 function User(options) {
   this.name = options.name;
 }
@@ -36,7 +36,7 @@ var good = new User({
 
 * private 메서드나 프로퍼티명에 접두어로 밑줄을 붙여 구별하기 쉽게 합니다.
 
-```js
+```javascript
 // bad
 var persion = {
   getName: function() {
@@ -51,24 +51,24 @@ var persion = {
 };
 ```
 
-### 변수(Variable) {#javascript-1-2}
+## 변수\(Variable\) {#javascript-1-2}
 
-* 변수는 밑줄로 단어를 분리하여 사용하십시오. 이렇게 하면 함수와 함수가 아닌 나머지 식별자(즉 원시 데이터 타입과 객체)를 시각적으로 구별하는 데 도움이 됩니다.
+* 변수는 밑줄로 단어를 분리하여 사용하십시오. 이렇게 하면 함수와 함수가 아닌 나머지 식별자\(즉 원시 데이터 타입과 객체\)를 시각적으로 구별하는 데 도움이 됩니다.
 
-```js
+```javascript
 var first_name, favorite_bands, old_company_name;
 ```
 
 * 상수 및 전역 변수는 모든 글자를 대문자로 사용하십시오.
 
-```js
+```javascript
 var PI = 3.14,
     MAX_WIDTH = 960;
 ```
 
 * 변수를 선언 할 때는 항상 var를 사용합니다. 그렇지 않으면 전역 변수로 선언됩니다.
 
-```js
+```javascript
 // bad
 superPower = new SuperPower();
 
@@ -78,7 +78,7 @@ var superPower = new SuperPower();
 
 * 여러 변수를 선언하려면 하나의 var를 사용하여 변수마다 줄바꿈하여 선언합니다.
 
-```js
+```javascript
 // bad
 var items = getItems();
 var goSportsTeam = true;
@@ -92,7 +92,7 @@ var items = getItems(),
 
 * 정의되지 않은 변수를 마지막으로 선언합니다. 이것은 나중에 이미 할당된 변수 중 하나를 지정해야하는 경우에 유용합니다.
 
-```js
+```javascript
 // bad
 var i, len, dragonball,
     items = getItems(),
@@ -114,7 +114,7 @@ var items = getItems(),
 
 * 변수의 할당은 스코프의 시작 부분에서 해주십시오.
 
-```js
+```javascript
 // bad
 function() {
   test();
@@ -170,17 +170,19 @@ function() {
 }
 ```
 
-### 오브젝트(Objects) {#javascript-1-3}
+## 오브젝트\(Objects\) {#javascript-1-3}
 
 * Object를 만들 때는 리터럴 구문을 사용합니다.
-```js
-// bad
-var item = new Object();
 
-// good
-var item = {};
-```
+  \`\`\`js
 
+  // bad
+
+  var item = new Object\(\);
+
+// good var item = {};
+
+```text
 * 소문자 낙타표기법(camelCase)을 사용하십시오.
 
 ```js
@@ -192,11 +194,11 @@ var this-is-my-object = {};
 var thisIsMyObject = {};
 ```
 
-### 배열(Arrays) {#javascript-1-4}
+## 배열\(Arrays\) {#javascript-1-4}
 
 * 배열을 만들 때 리터럴 구문을 사용합니다.
 
-```js
+```javascript
 // bad
 var items = new Array();
 
@@ -204,11 +206,11 @@ var items = new Array();
 var items = [];
 ```
 
-### 문자열(Strings) {#javascript-1-5}
+## 문자열\(Strings\) {#javascript-1-5}
 
 * 문자열은 작은 따옴표 `''`를 사용합니다.
 
-```js
+```javascript
 // bad
 var name = "Bob Parr";
 
@@ -224,7 +226,7 @@ var fullName = 'Bob ' + this.lastName;
 
 * 80 문자 이상의 문자열은 문자열 연결을 사용하여 여러 줄에 걸쳐 기술 합니다.
 
-```js
+```javascript
 // bad
 var errorMessage = 'This is a super long error that was thrown because of Batman. When you stop to think about how Batman had anything to do with this, you would get nowhere fast.';
 
@@ -237,9 +239,9 @@ var errorMessage = 'This is a super long error that ' +
   'fast.';
 ```
 
-* 프로그래에서 문자열을 생성할 필요가 있는 경우 문자열 연결 대신 Array#join을 사용합니다.
+* 프로그래에서 문자열을 생성할 필요가 있는 경우 문자열 연결 대신 Array\#join을 사용합니다.
 
-```js
+```javascript
 var items,
     messages,
     length,
@@ -281,11 +283,11 @@ function inbox(messages) {
 }
 ```
 
-### 속성(Propertie) {#javascript-1-6}
+## 속성\(Propertie\) {#javascript-1-6}
 
 * 속성에 액세스하려면 도트.를 사용합니다.
 
-```js
+```javascript
 var luke = {
   jedi: true,
   age: 28
@@ -298,9 +300,9 @@ function getProp(prop) {
 var isJedi = getProp('jedi');
 ```
 
-* 변수를 사용하여 속성에 접근하려면 대괄호[]을 사용하십시오.
+* 변수를 사용하여 속성에 접근하려면 대괄호\[\]을 사용하십시오.
 
-```js
+```javascript
 var luke = {
   jedi: true,
   age: 28
@@ -313,11 +315,11 @@ function getProp(prop) {
 var isJedi = getProp('jedi');
 ```
 
-### 암묵적 타입캐스팅 피하기 {#javascript-1-7}
+## 암묵적 타입캐스팅 피하기 {#javascript-1-7}
 
 * == 나 != 보다는 === 와 !== 를 사용합니다.
 
-```js
+```javascript
 var zero = 0;
 
 // bad
@@ -330,11 +332,11 @@ if (zero === false) {
 }
 ```
 
-### 블록(Blocks) {#javascript-1-8}
+## 블록\(Blocks\) {#javascript-1-8}
 
-* 수행 블록은 중괄호 ({})를 사용합니다.
+* 수행 블록은 중괄호 \({}\)를 사용합니다.
 
-```js
+```javascript
 // bad
 if (test)
   return false;
@@ -356,11 +358,11 @@ function() {
 }
 ```
 
-### 주석(Comments) {#javascript-1-9}
+## 주석\(Comments\) {#javascript-1-9}
 
 * 복수행의 코멘트는 `/** ... */` 를 사용해 주십시오. 그 안에는 설명과 모든 매개 변수와 반환 값에 대한 형식과 값을 설명합니다.
 
-```js
+```javascript
 // bad
 // make() returns a new element
 // based on the passed in tag name
@@ -392,7 +394,7 @@ function make(tag) {
 
 * 한 줄 주석에는`//`를 사용하십시오. 코멘트를 추가하고 싶은 코드의 상단에 작성하십시오. 또한 주석 앞에 빈 줄을 넣어주십시오.
 
-```js
+```javascript
 // bad
 var active = true;  // is current tab
 
@@ -422,10 +424,9 @@ function getType() {
 
 > 문제를 지적하고 재고를 촉구하거나 문제에 대한 해결책을 제시하는 등 의견의 앞에 `FIXME` 나 `TODO`를 붙이는 것으로 다른 개발자의 빠른 이해를 도울 수 있습니다. 이러한 어떤 액션을 동반한다는 의미에서 일반 코멘트와는 다릅니다. 액션은 `FIXME - 해결책이 필요` 또는 `TODO - 구현이 필요` 입니다.
 
-
 * 문제에 대한 코멘트로 `// FIXME :`를 사용하십시오.
 
-```js
+```javascript
 function Calculator() {
 
   // FIXME: 전역 변수를 사용해서는 안됩니다.
@@ -437,7 +438,7 @@ function Calculator() {
 
 * 문제 해결책에 대한 코멘트로 `// TODO :`를 사용하십시오.
 
-```js
+```javascript
 function Calculator() {
 
   // TODO: total은 옵션 매개 변수로 설정되어야 함.
@@ -445,11 +446,12 @@ function Calculator() {
   return this;
 }
 ```
-### 공백(Whitespace) 및 들여쓰기(indentation) {#javascript-1-10}
+
+## 공백\(Whitespace\) 및 들여쓰기\(indentation\) {#javascript-1-10}
 
 * 탭에는 공백 2개를 설정하십시오.
 
-```js
+```javascript
 // bad
 function() {
 ∙∙∙∙var name;
@@ -466,9 +468,9 @@ function() {
 }
 ```
 
-* if-else, 객체 리터럴의 여는 중괄호({)전, 닫는 중괄호(})와 else 또는 while 사이에 공백하나를 입력합니다.
+* if-else, 객체 리터럴의 여는 중괄호\({\)전, 닫는 중괄호\(}\)와 else 또는 while 사이에 공백하나를 입력합니다.
 
-```js
+```javascript
 // if-else
 if (a) {
   ...
@@ -485,43 +487,43 @@ dog.set('attr', {
 
 * for 루프의 여는 대괄호전, 쉼표, 피연산자와 구성요소를 분리하는 세미콜론 다음 공백을 하나 입력합니다.
 
-```js
+```javascript
 for (var i = 0, max = 10; i < max; i += 1) {...}
 ```
 
 * 배열의 원소들은 분리하는 쉼표다음 공백을 하나 입력합니다.
 
-```js
+```javascript
 var a = [1, 2, 3];
 ```
 
 * 객체의 프로퍼티를 분리하는 쉼표 다음, 프로퍼티의 이름과 값을 분리하는 콜론 다음 공백을 하나 입력합니다.
 
-```js
+```javascript
 var o = {a: 1, b: 2};
 ```
 
 * 함수의 인자들을 분리할 때 공백을 하나 입력합니다.
 
-```js
+```javascript
 myFunc(a, b, c);
 ```
 
 * 함수를 정의하는 중괄호 전에 공백을 하나 입력합니다.
 
-```js
+```javascript
 function myFunc() {...};
 ```
 
 * 익명 함수 표현식에서 function 다음에 공백을 하나 입력합니다.
 
-```js
+```javascript
 var myFunc = function() {...};
 ```
 
 * 모든 연산자와 피연산자 사이에 공백을 하나 입력합니다. 즉 `+, - < *, =, <, >, <==, >==, ===, !==, &&, ||, +=` 등의 앞뒤에 공백을 하나 입력합니다.
 
-```js
+```javascript
 //bad
 var d= 0,
     a = b+1;
@@ -538,11 +540,9 @@ if (a && b && c) {
 }
 ```
 
+* 메소드 체인이 길어지는 경우 적절히 들여쓰기\(indentation\) 합니다.
 
-
-* 메소드 체인이 길어지는 경우 적절히 들여쓰기(indentation) 합니다.
-
-```js
+```javascript
 // bad
 $('#items').find('.selected').highlight().end().find('.open').updateCount();
 
@@ -571,31 +571,29 @@ var leds = stage.selectAll('.led')
     .call(tron.led);
 ```
 
-### 빈줄 {#javascript-1-11}
+## 빈줄 {#javascript-1-11}
 
 * 파일의 마지막에는 하나의 빈줄을 넣어주세요.
 
-```js
+```javascript
 // bad
 (function(global) {
   // ...stuff...
 })(this);
 ```
 
-```js
+```javascript
 // good
 (function(global) {
   // ...stuff...
 })(this);
-
 ```
 
-
-### jQuery {#javascript-1-12}
+## jQuery {#javascript-1-12}
 
 * jQuery Object의 변수 앞에는 $을 부여해 주십시오.
 
-```js
+```javascript
 // bad
 var sidebar = $('.sidebar');
 
@@ -605,7 +603,7 @@ var $sidebar = $('.sidebar');
 
 * jQuery 쿼리결과를 캐시해주십시오.
 
-```js
+```javascript
 // bad
 function setSidebar() {
   $('.sidebar').hide();
@@ -629,3 +627,4 @@ function setSidebar() {
   });
 }
 ```
+
